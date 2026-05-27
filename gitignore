@@ -1,0 +1,15 @@
+# ambiente virtual
+venv/
+# config local com o caminho do dataset de cada um
+config.py
+# dataset (não versionar imagens pesadas)
+OGYEIv2/
+ogyeiv2/
+*.jpg
+*.jpeg
+*.png
+!outputs/**/*.png
+# python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
