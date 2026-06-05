@@ -25,7 +25,7 @@ dados_ogyeiv2/
 # ====================================================================
 # CONFIGURAÇÕES LOCAIS (NÃO ENVIAR CREDENCIAIS OU CAMINHOS LOCAIS)
 # ====================================================================
-config.py
+config.exemplo.py
 .env
 .env.local
 
