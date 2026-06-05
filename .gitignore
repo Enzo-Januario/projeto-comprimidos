@@ -1,0 +1,88 @@
+# ====================================================================
+# AMBIENTE VIRTUAL E DEPENDÊNCIAS
+# ====================================================================
+venv/
+.venv/
+env/
+bin/
+lib/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+dados_ogyeiv2/
+
+# ====================================================================
+# CONFIGURAÇÕES LOCAIS (NÃO ENVIAR CREDENCIAIS OU CAMINHOS LOCAIS)
+# ====================================================================
+config.py
+.env
+.env.local
+
+# ====================================================================
+# DATASET E ARQUIVOS DE IMAGEM PESADOS
+# ====================================================================
+OGYEIv2/
+ogyeiv2/
+*.jpg
+*.jpeg
+*.png
+
+# NOTA: X.csv e y.csv NÃO estão nesta lista para que continuem sendo 
+# versionados, permitindo rodar o notebook 03 sem o dataset completo.
+
+# ====================================================================
+# SAÍDAS DO PROJETO (OUTPUTS)
+# ====================================================================
+# Ignora arquivos genéricos em outputs, mas abre exceção para os plots/gráficos em PNG
+outputs/*
+!outputs/**/*.png
+
+# ====================================================================
+# PYTHON (ARQUIVOS TEMPORÁRIOS E COMPILADOS)
+# ====================================================================
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+doc/_build/
+target/
+.ipynb_checkpoints/
+.pytest_cache/
+.tox/
+.coverage
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.log
+
+# ====================================================================
+# IDES, EDITORES E ARQUIVOS DE SISTEMA
+# ====================================================================
+# VS Code
+.vscode/
+!.vscode/extensions.json
+
+# PyCharm / IntelliJ
+.idea/
+
+# Outros editores e sistemas
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+Thumbs.db
+.DS_Store
