@@ -31,8 +31,6 @@ Classifica 4 tipos de comprimidos do dataset OGYEIv2 usando segmentação, extra
    git clone <url-do-repo>
    cd projeto-comprimidos
 
-```
-
 2. **Criar e ativar o ambiente virtual (venv):**
 * **Windows (PowerShell):**
 ```powershell
