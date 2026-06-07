@@ -98,9 +98,3 @@ Abra os arquivos na ordem do pipeline:
 1. `notebooks/01_segmentacao.ipynb` — Compara e valida os métodos de segmentação.
 2. `notebooks/02_features.ipynb` — Extrai as características estruturais e gera as matrizes `X.csv` e `y.csv`.
 3. `notebooks/03_classificacao.ipynb` — Treina os modelos clássicos e avalia as métricas.
-
-## Observações Importantes
-
-* **Acentuação de Caminhos:** O código foi blindado com `cv2.imdecode` para evitar que o OpenCV trave caso o caminho do seu repositório local possua espaços ou acentos (ex: `Visão Computacional`).
-* **Limitação de Dados:** O OGYEIv2 possui apenas cerca de 40 imagens por classe. Essa restrição de amostragem deve ser discutida criticamente na escrita do relatório final.
-* **Divisão de Splits:** A coluna `split` dentro de `X.csv` preserva rigorosamente a separação original de treino, validação e teste definida pelo autor do dataset.
