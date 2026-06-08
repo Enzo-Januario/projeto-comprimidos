@@ -28,9 +28,9 @@ Classifica 4 tipos de comprimidos do dataset OGYEIv2 usando segmentação, extra
 
 1. **Clonar o repositório e entrar na pasta:**
    ```bash
-   git clone <url-do-repo>
+   git clone https://github.com/Enzo-Januario/projeto-comprimidos.git
    cd projeto-comprimidos
-
+   ```
 2. **Criar e ativar o ambiente virtual (venv):**
 * **Windows (PowerShell):**
 ```powershell
@@ -64,15 +64,6 @@ Se você for rodar os passos 01 e 02, siga o padrão:
 * Baixe o dataset OGYEIv2 do Kaggle.
 * Extraia e mova **apenas** a pasta interna chamada `ogyeiv2` (com letras minúsculas, contendo as subpastas `train/`, `valid/` e `test/`) para a **raiz deste projeto**. *(O arquivo .gitignore já está configurado para não subir essas imagens para o GitHub).*
 
-
-5. **Ativar o arquivo de configuração:**
-Gere o arquivo local rodando o comando:
-* **Windows:** `copy config.exemplo.py config.py`
-* **Linux/Mac:** `cp config.exemplo.py config.py`
-
-
-*O arquivo config.py detecta automaticamente a raiz do projeto no sistema de qualquer integrante, eliminando a necessidade de editar caminhos de pastas manualmente.*
-
 ## Como Executar
 
 Você pode rodar o projeto de duas formas:
@@ -98,9 +89,3 @@ Abra os arquivos na ordem do pipeline:
 1. `notebooks/01_segmentacao.ipynb` — Compara e valida os métodos de segmentação.
 2. `notebooks/02_features.ipynb` — Extrai as características estruturais e gera as matrizes `X.csv` e `y.csv`.
 3. `notebooks/03_classificacao.ipynb` — Treina os modelos clássicos e avalia as métricas.
-
-## Observações Importantes
-
-* **Acentuação de Caminhos:** O código foi blindado com `cv2.imdecode` para evitar que o OpenCV trave caso o caminho do seu repositório local possua espaços ou acentos (ex: `Visão Computacional`).
-* **Limitação de Dados:** O OGYEIv2 possui apenas cerca de 40 imagens por classe. Essa restrição de amostragem deve ser discutida criticamente na escrita do relatório final.
-* **Divisão de Splits:** A coluna `split` dentro de `X.csv` preserva rigorosamente a separação original de treino, validação e teste definida pelo autor do dataset.
